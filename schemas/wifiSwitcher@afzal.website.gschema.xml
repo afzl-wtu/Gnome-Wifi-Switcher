@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="wifiSwitcher@afzal.website" path="/org/gnome/shell/extensions/wifiSwitcher@afzal.website/">
+    <key type="as" name="wifi-ssids">
+    <default>[]</default>
+    <summary>A key for storing an array of strings</summary>
+    <description>
+      This key is used to store an array of strings in the GSettings store.
+    </description>
+  </key>
+  </schema>
+</schemalist>
