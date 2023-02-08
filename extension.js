@@ -209,9 +209,7 @@ const MenuGenerator = GObject.registerClass(
       wifi._createSwitches(menu, client);
 
       //  Create setting menu
-      var item_setting = new PopupMenu.PopupMenuItem(
-        _("https://afzal.website")
-      );
+      var item_setting = new PopupMenu.PopupMenuItem(_("Network Settings"));
       item_setting.connect("activate", () => {
         wifi._openSettings();
       });
@@ -327,7 +325,9 @@ class Extension {
 
   enable() {
     client = NM.Client.new(null);
-    settingss = ExtensionUtils.getSettings("wifiSwitcher@afzal.website");
+    settingss = ExtensionUtils.getSettings(
+      "org.gnome.shell.extensions.website.afzal"
+    );
     // settingss.set_strv("wifi-ssids", []);
     wifi = new NMConnectionWifi(NMConnectionCategory.WIFI);
     new MenuGenerator(client, wifi);
