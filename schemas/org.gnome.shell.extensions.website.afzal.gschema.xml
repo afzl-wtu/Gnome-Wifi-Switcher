@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="org.gnome.shell.extensio type="as" name="wifi-ssids">
+  <schema id="org.gnome.shell.extensions.website.afzal" path="/org/gnome/shell/extensions/wifiswitcherbyafzal/">
+    <key type="as" name="wifi-ssids">
     <default>[]</default>
     <summary>A key for storing an array of strings</summary>
     <description>
